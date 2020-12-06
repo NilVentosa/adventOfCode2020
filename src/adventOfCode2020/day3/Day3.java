@@ -36,20 +36,6 @@ public class Day3 extends Day {
         System.out.println(result);
     }
 
-    private ArrayList<String> getInput() {
-        ArrayList<String> input = new ArrayList<>();
-        try {
-            File myObj = new File(inputFile);
-            Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                input.add(data);
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) { }
-        return input;
-    }
-
     private BigInteger getTreesInSlope(int x, int y) {
         ArrayList<String> input = getInput();
         Point point = new Point(input.get(1).length());

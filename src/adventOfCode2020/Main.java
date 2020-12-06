@@ -2,6 +2,7 @@ package adventOfCode2020;
 
 import adventOfCode2020.day2.Day2;
 import adventOfCode2020.day3.Day3;
+import adventOfCode2020.day4.Day4;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +13,9 @@ public class Main {
                     break;
                 case "3":
                     run(new Day3());
+                    break;
+                case "4":
+                    run(new Day4());
                     break;
             }
         }
