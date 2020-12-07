@@ -39,7 +39,6 @@ public class Day4 extends Day {
         for (Passport passport: passports) {
             if (passport.isValidPart2()) {
                 count++;
-                System.out.println(passport);
             }
         }
         System.out.println(count);
