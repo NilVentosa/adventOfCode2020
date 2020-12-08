@@ -22,23 +22,40 @@ public class BoardingPass {
             if (String.valueOf(placement.charAt(i)).equals("F")) {
                 high = (high + low) / 2;
             } else if (String.valueOf(placement.charAt(i)).equals("B")) {
-                low = (high + low) / 2;
+                low = ((high + low) / 2)+1;
             }
         }
-
-
+        if (high == low) {
+            result = high;
+        }
         return result;
     }
 
     private int extractColumn() {
         int result = 0;
+        int low = 0;
+        int high = 7;
+
+        for (int i = 7; i <= 9; i++) {
+            if (String.valueOf(placement.charAt(i)).equals("L")) {
+                high = (high + low) / 2;
+            } else if (String.valueOf(placement.charAt(i)).equals("R")) {
+                low = ((high + low) / 2)+1;
+            }
+        }
+        if (high == low) {
+            result = high;
+        }
 
         return result;
     }
 
     private int extractId() {
-        int result = 0;
-
+        int result = (this.row * 8) + this.column;
         return result;
+    }
+
+    public int getId() {
+        return this.id;
     }
 }

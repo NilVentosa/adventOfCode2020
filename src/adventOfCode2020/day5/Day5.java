@@ -19,6 +19,14 @@ public class Day5 extends Day {
     protected void part1() {
         ArrayList<String> input = getInput();
         ArrayList<BoardingPass> boardingPasses = getAllBoardingPasses(input);
+        int highest = 0;
+
+        for (BoardingPass pass: boardingPasses) {
+            if (pass.getId() > highest) {
+                highest = pass.getId();
+            }
+        }
+        System.out.println(highest);
     }
 
     @Override
