@@ -10,10 +10,6 @@ public class Main {
         runArgs(args);
     }
 
-    private static void run(Day day) {
-        day.run();
-    }
-
     private static void runArgs(String[] args) {
         for (String arg: args) {
             switch (arg){
@@ -31,5 +27,9 @@ public class Main {
                     break;
             }
         }
+    }
+
+    private static void run(Day day) {
+        day.run();
     }
 }

@@ -1,6 +1,10 @@
 package adventOfCode2020.day5;
 
-public class BoardingPass {
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+public class BoardingPass implements Comparable<BoardingPass> {
     private String placement;
     private int row;
     private int column;
@@ -11,6 +15,10 @@ public class BoardingPass {
         this.row = this.extractRow();
         this.column = this.extractColumn();
         this.id = this.extractId();
+    }
+
+    public BoardingPass(int id) {
+        this.id = id;
     }
 
     private int extractRow() {
@@ -57,5 +65,21 @@ public class BoardingPass {
 
     public int getId() {
         return this.id;
+    }
+
+    @Override
+    public int compareTo(BoardingPass o) {
+        if (this.id == o.id) {
+            return 0;
+        } else if (this.id > o.id) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return this.placement + " " + this.row + " " + this.column + " " + this.id;
     }
 }

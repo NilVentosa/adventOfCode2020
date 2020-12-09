@@ -100,7 +100,7 @@ public class Passport {
             this.isValidPart2 = false;
         }
 
-        if (!this.hcl.matches("^#[a-zA-Z0-9]{6}$")) {
+        if (!this.hcl.matches("^#[a-fA-F0-9]{6}$")) {
             this.isValidPart2 = false;
         }
 
