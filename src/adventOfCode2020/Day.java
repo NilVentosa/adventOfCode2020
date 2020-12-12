@@ -3,7 +3,9 @@ package adventOfCode2020;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public abstract class Day {
     protected String inputFile;
@@ -41,4 +43,27 @@ public abstract class Day {
         return result;
     }
 
+    protected int countOccurrences(String someString, char searchedChar, int startIndex) {
+        if (startIndex >= someString.length()) {
+            return 0;
+        }
+
+        int count = someString.charAt(startIndex) == searchedChar ? 1 : 0;
+        return count + countOccurrences(
+                someString, searchedChar, startIndex + 1);
+    }
+
+    protected String removeDuplicateChars(String input) {
+        char[] chars = input.toCharArray();
+        Set<Character> charSet = new LinkedHashSet<Character>();
+        for (char c : chars) {
+            charSet.add(c);
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (Character character : charSet) {
+            sb.append(character);
+        }
+        return sb.toString();
+    }
 }

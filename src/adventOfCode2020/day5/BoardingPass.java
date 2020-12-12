@@ -1,9 +1,5 @@
 package adventOfCode2020.day5;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-
 public class BoardingPass implements Comparable<BoardingPass> {
     private String placement;
     private int row;

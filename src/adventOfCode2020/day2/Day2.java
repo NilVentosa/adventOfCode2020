@@ -61,14 +61,4 @@ public class Day2 extends Day {
         } catch (FileNotFoundException e) { }
         return lines;
     }
-
-    private int countOccurrences(String someString, char searchedChar, int index) {
-        if (index >= someString.length()) {
-            return 0;
-        }
-
-        int count = someString.charAt(index) == searchedChar ? 1 : 0;
-        return count + countOccurrences(
-                someString, searchedChar, index + 1);
-    }
 }
