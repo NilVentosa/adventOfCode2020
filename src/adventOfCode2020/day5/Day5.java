@@ -10,12 +10,6 @@ public class Day5 extends Day {
     }
 
     @Override
-    protected void run() {
-        part1();
-        part2();
-    }
-
-    @Override
     protected void part1() {
         ArrayList<String> input = getInput();
         ArrayList<BoardingPass> boardingPasses = getAllBoardingPasses(input);

@@ -10,14 +10,6 @@ import java.util.Scanner;
 public class Day2 extends Day {
     public Day2(){
         super("input2");
-    };
-
-    @Override
-    public void run() {
-        List<Line> lines = getLines();
-
-        this.part1();
-        this.part2();
     }
 
     @Override

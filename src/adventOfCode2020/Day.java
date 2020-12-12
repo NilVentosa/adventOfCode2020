@@ -14,7 +14,10 @@ public abstract class Day {
         this.inputFile = "resources/" + inputFile;
     }
 
-    protected abstract void run();
+    protected void run() {
+        part1();
+        part2();
+    }
     protected abstract void part1();
     protected abstract void part2();
 
@@ -55,7 +58,7 @@ public abstract class Day {
 
     protected String removeDuplicateChars(String input) {
         char[] chars = input.toCharArray();
-        Set<Character> charSet = new LinkedHashSet<Character>();
+        Set<Character> charSet = new LinkedHashSet<>();
         for (char c : chars) {
             charSet.add(c);
         }

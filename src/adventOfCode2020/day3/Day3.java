@@ -5,18 +5,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Day3 extends Day {
 
     public Day3(){
         super("input3");
-    }
-
-    @Override
-    public void run() {
-        part1();
-        part2();
     }
 
     @Override
