@@ -1,3 +1,4 @@
 .idea
 out/production
 adventOfCode2020.iml
+.attach*
