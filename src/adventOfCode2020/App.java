@@ -7,6 +7,7 @@ import adventOfCode2020.day5.Day5;
 import adventOfCode2020.day6.Day6;
 import adventOfCode2020.day7.Day7;
 import adventOfCode2020.day8.Day8;
+import adventOfCode2020.day9.Day9;
 
 public class App {
     public static void main(String[] args) {
@@ -36,6 +37,9 @@ public class App {
                     break;
                 case "8":
                     run(new Day8());
+                    break;
+                case "9":
+                    run(new Day9());
                     break;
             }
         }
