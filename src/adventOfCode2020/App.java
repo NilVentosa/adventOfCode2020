@@ -1,5 +1,6 @@
 package adventOfCode2020;
 
+import adventOfCode2020.day10.Day10;
 import adventOfCode2020.day2.Day2;
 import adventOfCode2020.day3.Day3;
 import adventOfCode2020.day4.Day4;
@@ -40,6 +41,9 @@ public class App {
                     break;
                 case "9":
                     run(new Day9());
+                    break;
+                case "10":
+                    run(new Day10());
                     break;
             }
         }
