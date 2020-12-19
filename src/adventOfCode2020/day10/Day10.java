@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Day10 extends Day {
     public Day10() {
-        super("input10test");
+        super("input10");
     }
 
     @Override
@@ -21,5 +21,6 @@ public class Day10 extends Day {
     protected void part2() {
         ArrayList<String> input = getInput();
         Adapters adapters = new Adapters(input);
+        System.out.println(adapters.findCombinations());
     }
 }
