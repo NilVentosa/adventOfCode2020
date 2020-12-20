@@ -36,7 +36,6 @@ public class Adapters {
             }
         }
         DP.put(i, ans);
-        System.out.println(i + ", " + ans);
         return ans;
     }
 

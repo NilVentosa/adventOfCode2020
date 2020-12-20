@@ -9,9 +9,11 @@ import java.util.Set;
 
 public abstract class Day {
     protected String inputFile;
+    protected ArrayList<String> input;
 
     protected Day(String inputFile){
         this.inputFile = "resources/" + inputFile;
+        this.input = getInput();
     }
 
     protected void run() {
