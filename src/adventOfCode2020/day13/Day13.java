@@ -22,10 +22,10 @@ public class Day13 extends Day {
 
     @Override
     protected void part2() {
-        System.out.println(smoothTwo());
         System.out.println(smoothBigTwo());
     }
 
+    // int is not big enough for the answer
     private int smoothTwo() {
         int stepSize = Integer.parseInt(buses[0]);
         int currentDeparture = 0;
@@ -56,6 +56,7 @@ public class Day13 extends Day {
         return currentDeparture;
     }
 
+    // Too slow
     private int bruteForceTwo() {
         int result = 0;
 
