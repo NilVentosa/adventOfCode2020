@@ -105,9 +105,8 @@ public class Day16 extends Day {
         if (biggest == 1) {
             return result;
         } else {
-            removeDuplicates(result);
+            return removeDuplicates(result);
         }
-        return result;
     }
 
     private HashMap<String, ArrayList<Integer>> extractRules(ArrayList<String> input) {

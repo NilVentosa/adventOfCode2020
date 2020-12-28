@@ -7,6 +7,7 @@ import adventOfCode2020.day13.Day13;
 import adventOfCode2020.day14.Day14;
 import adventOfCode2020.day15.Day15;
 import adventOfCode2020.day16.Day16;
+import adventOfCode2020.day17.Day17;
 import adventOfCode2020.day2.Day2;
 import adventOfCode2020.day3.Day3;
 import adventOfCode2020.day4.Day4;
@@ -68,6 +69,9 @@ public class App {
                     break;
                 case "16":
                     run(new Day16());
+                    break;
+                case "17":
+                    run(new Day17());
                     break;
             }
         }
