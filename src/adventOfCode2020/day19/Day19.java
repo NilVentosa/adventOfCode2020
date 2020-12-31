@@ -22,7 +22,7 @@ public class Day19 extends Day {
 
     @Override
     protected void part1() {
-        
+
     }
 
     @Override
